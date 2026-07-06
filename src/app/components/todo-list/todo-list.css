@@ -1,0 +1,34 @@
+.todo-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+}
+
+button {
+  padding: 8px;
+  cursor: pointer;
+  background-color: rgb(112, 144, 173);
+  color: white;
+  border-radius: 4px;
+}
+
+li {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.erledigt {
+  text-decoration: line-through;
+  color: gray;
+}

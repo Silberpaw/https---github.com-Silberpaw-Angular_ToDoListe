@@ -1,0 +1,16 @@
+li {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.erledigt {
+  text-decoration: line-through;
+  color: gray;
+}
+
+button {
+  padding: 8px;
+  cursor: pointer;
+}

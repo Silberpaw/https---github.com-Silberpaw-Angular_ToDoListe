@@ -1,0 +1,7 @@
+.counter {
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}

@@ -1,0 +1,30 @@
+<div class="todo-container">
+  <div class="input-row">
+    <input [(ngModel)]="neueAufgabe" placeholder="Neue Aufgabe eingeben" />
+
+<input [(ngModel)]="neueKategorie" placeholder="Kategorie" />
+
+<select [(ngModel)]="neuePrioritaet">
+  <option value="niedrig">Niedrig</option>
+  <option value="mittel">Mittel</option>
+  <option value="hoch">Hoch</option>
+</select>
+
+<button (click)="aufgabeHinzufuegen()">
+  Hinzufügen
+</button>
+  </div>
+
+  <p>Offene Aufgaben: {{ aufgaben.length }}</p>
+
+  <ul>
+    @for (aufgabe of aufgaben; track $index) {
+       <app-todo-item
+        [aufgabe]="aufgabe"
+        [index]="$index"
+        (loeschen)="aufgabeLoeschen($event)"
+        (erledigtUmschalten)="erledigtUmschalten($event)"
+      ></app-todo-item>
+    }
+  </ul>
+</div>

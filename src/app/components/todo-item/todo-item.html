@@ -1,0 +1,13 @@
+<li>
+  <span [class.erledigt]="aufgabe.erledigt">
+    {{ aufgabe.text }}
+  </span>
+
+  <button (click)="erledigtKlick()">
+    Erledigt
+  </button>
+
+  <button (click)="loeschenKlick()">
+    Löschen
+  </button>
+</li>
